@@ -62,6 +62,7 @@ public class CourseSearchController {
     }
 
     // Assignment B: Autocomplete endpoint
+    
     @GetMapping("/search/suggest")
     public ResponseEntity<List<String>> getSuggestions(@RequestParam String q) {
         log.info("Received suggestion request for query: {}", q);

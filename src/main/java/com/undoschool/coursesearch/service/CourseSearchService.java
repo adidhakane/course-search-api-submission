@@ -108,7 +108,6 @@ public class CourseSearchService {
         }
 
         // Price range filters using NumberRangeQuery
-        
         if (request.getMinPrice() != null || request.getMaxPrice() != null) {
             NumberRangeQuery.Builder priceRangeBuilder = new NumberRangeQuery.Builder()
                     .field("price");
