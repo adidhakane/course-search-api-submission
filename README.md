@@ -28,7 +28,7 @@ This application indexes course documents into Elasticsearch and exposes REST en
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/adidhakane/course-search-api-submission
 cd course-search-api
 ```
 ### 2. Start Elasticsearch
@@ -208,10 +208,10 @@ curl "http://localhost:8080/api/search?sort=upcoming&size=5"
 ```
 
 ### Automated Testing
-Run the quick test script:
+Run the run tests script in a new terminal with root directory:
 ```bash
-chmod +x quick-test.sh
-./quick-test.sh
+chmod +x quick-test.sh #or relavent windows command
+./run-tests.sh 
 ```
 
 ### Integration Tests
