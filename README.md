@@ -31,6 +31,25 @@ This application indexes course documents into Elasticsearch and exposes REST en
 git clone https://github.com/adidhakane/course-search-api-submission
 cd course-search-api
 ```
+Create application.properties file at src/main/resources/ and add following content in it
+```
+# Elasticsearch Configuration
+spring.elasticsearch.uris=http://localhost:9200
+
+# Server Configuration
+server.port=8080
+
+# Logging Configuration
+logging.level.com.undoschool.coursesearch=INFO
+logging.level.org.springframework.data.elasticsearch=DEBUG
+
+# Application Information
+spring.application.name=course-search-api
+
+# DevTools Configuration (for development)
+spring.devtools.restart.enabled=true
+spring.devtools.livereload.enabled=true
+```
 ### 2. Start Docker Desktop & then Elasticsearch
 ```bash
 docker-compose up -d
