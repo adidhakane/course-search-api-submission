@@ -35,7 +35,7 @@ cd course-search-api
 ```bash
 docker-compose up -d
 ```
-### 3. Verify Elasticsearch is Running
+### 3. Wait for sometime (1 or 2 minutes) & then is Verify Elasticsearch is Running
 ```bash
    curl http://localhost:9200
 ```
