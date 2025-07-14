@@ -31,7 +31,7 @@ This application indexes course documents into Elasticsearch and exposes REST en
 git clone https://github.com/adidhakane/course-search-api-submission
 cd course-search-api
 ```
-### 2. Start Elasticsearch
+### 2. Start Docker Desktop & then Elasticsearch
 ```bash
 docker-compose up -d
 ```
